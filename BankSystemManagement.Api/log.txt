@@ -1,0 +1,20 @@
+2023-12-15 20:55:09.761 +01:00 [INF] User profile is available. Using 'C:\Users\alvin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-15 20:55:09.897 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/swagger/index.html - null null
+2023-12-15 20:55:09.924 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-15 20:55:09.924 +01:00 [INF] Hosting environment: Development
+2023-12-15 20:55:09.924 +01:00 [INF] Content root path: D:\Visual Studio c#\Asp.net core API\BankSystemManagement.Api\BankSystemManagement.Api
+2023-12-15 20:55:10.036 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/swagger/index.html - 200 null text/html;charset=utf-8 141.0336ms
+2023-12-15 20:55:10.085 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-15 20:55:10.088 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 3.3387ms
+2023-12-15 20:55:10.298 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/_vs/browserLink - null null
+2023-12-15 20:55:10.345 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/_vs/browserLink - 200 null text/javascript; charset=UTF-8 47.0116ms
+2023-12-15 20:55:10.778 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/swagger/v1/swagger.json - null null
+2023-12-15 20:55:10.861 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 83.1129ms
+2023-12-15 20:55:17.617 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44362/api/User/login - application/json 50
+2023-12-15 20:55:17.707 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.UserController.Login (BankSystemManagement.Api)'
+2023-12-15 20:55:17.730 +01:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(BankSystemManagement.Core.DTOs.LoginRequestDto) on controller BankSystemManagement.Api.Controllers.UserController (BankSystemManagement.Api).
+2023-12-15 20:55:18.315 +01:00 [ERR] Error authenticating user: Attempting to cast a DBNull to a non nullable type! Note that out/return parameters will not have updated values until the data stream completes (after the 'foreach' for Query(..., buffered: false), or after the GridReader has been disposed for QueryMultiple)
+2023-12-15 20:55:18.323 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-12-15 20:55:18.330 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.UserController.Login (BankSystemManagement.Api) in 596.3919ms
+2023-12-15 20:55:18.331 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.UserController.Login (BankSystemManagement.Api)'
+2023-12-15 20:55:18.332 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44362/api/User/login - 200 null application/json; charset=utf-8 714.9309ms
