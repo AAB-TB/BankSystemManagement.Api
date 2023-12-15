@@ -18,3 +18,365 @@
 2023-12-15 20:55:18.330 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.UserController.Login (BankSystemManagement.Api) in 596.3919ms
 2023-12-15 20:55:18.331 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.UserController.Login (BankSystemManagement.Api)'
 2023-12-15 20:55:18.332 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44362/api/User/login - 200 null application/json; charset=utf-8 714.9309ms
+2023-12-15 22:09:33.651 +01:00 [INF] User profile is available. Using 'C:\Users\alvin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-15 22:09:33.771 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/swagger/index.html - null null
+2023-12-15 22:09:33.796 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-15 22:09:33.797 +01:00 [INF] Hosting environment: Development
+2023-12-15 22:09:33.797 +01:00 [INF] Content root path: D:\Visual Studio c#\Asp.net core API\BankSystemManagement.Api\BankSystemManagement.Api
+2023-12-15 22:09:33.912 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-15 22:09:33.910 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/swagger/index.html - 200 null text/html;charset=utf-8 140.562ms
+2023-12-15 22:09:33.917 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 4.7899ms
+2023-12-15 22:09:33.971 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/_vs/browserLink - null null
+2023-12-15 22:09:33.998 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/_vs/browserLink - 200 null text/javascript; charset=UTF-8 27.3278ms
+2023-12-15 22:09:34.144 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/swagger/v1/swagger.json - null null
+2023-12-15 22:09:34.235 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 90.3129ms
+2023-12-15 22:09:55.058 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/api/User/GetCustomerDetails?customerId=100004 - null null
+2023-12-15 22:09:55.203 +01:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2023-12-15 22:09:55.209 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-15 22:09:55.211 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/api/User/GetCustomerDetails?customerId=100004 - 401 null null 153.2149ms
+2023-12-15 22:10:14.876 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44362/api/User/login - application/json 52
+2023-12-15 22:10:14.889 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.UserController.Login (BankSystemManagement.Api)'
+2023-12-15 22:10:14.939 +01:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(BankSystemManagement.Core.DTOs.LoginRequestDto) on controller BankSystemManagement.Api.Controllers.UserController (BankSystemManagement.Api).
+2023-12-15 22:10:15.452 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-12-15 22:10:15.459 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.UserController.Login (BankSystemManagement.Api) in 516.2203ms
+2023-12-15 22:10:15.460 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.UserController.Login (BankSystemManagement.Api)'
+2023-12-15 22:10:15.461 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44362/api/User/login - 200 null application/json; charset=utf-8 585.6124ms
+2023-12-15 22:10:34.493 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/api/User/GetCustomerDetails?customerId=100004 - null null
+2023-12-15 22:10:34.569 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.UserController.GetCustomerDetailsAsync (BankSystemManagement.Api)'
+2023-12-15 22:10:34.576 +01:00 [INF] Route matched with {action = "GetCustomerDetails", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankSystemManagement.Core.DTOs.CustomerDetailsDto]] GetCustomerDetailsAsync(Int32) on controller BankSystemManagement.Api.Controllers.UserController (BankSystemManagement.Api).
+2023-12-15 22:10:34.648 +01:00 [INF] Executing OkObjectResult, writing value of type 'BankSystemManagement.Core.DTOs.CustomerDetailsDto'.
+2023-12-15 22:10:34.660 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.UserController.GetCustomerDetailsAsync (BankSystemManagement.Api) in 83.6373ms
+2023-12-15 22:10:34.660 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.UserController.GetCustomerDetailsAsync (BankSystemManagement.Api)'
+2023-12-15 22:10:34.660 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/api/User/GetCustomerDetails?customerId=100004 - 200 null application/json; charset=utf-8 167.3195ms
+2023-12-15 22:15:26.782 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44362/api/User/NewCustomerRegister - application/json 421
+2023-12-15 22:15:26.788 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.UserController.RegisterUser (BankSystemManagement.Api)'
+2023-12-15 22:15:26.795 +01:00 [INF] Route matched with {action = "RegisterUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Nullable`1[System.Int32]]] RegisterUser(BankSystemManagement.Core.DTOs.CustomerRegistrationDto) on controller BankSystemManagement.Api.Controllers.UserController (BankSystemManagement.Api).
+2023-12-15 22:15:26.866 +01:00 [INF] User 'loli' with CustomerID 100006 registered successfully.
+2023-12-15 22:15:26.870 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-12-15 22:15:26.871 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.UserController.RegisterUser (BankSystemManagement.Api) in 76.0792ms
+2023-12-15 22:15:26.871 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.UserController.RegisterUser (BankSystemManagement.Api)'
+2023-12-15 22:15:26.871 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44362/api/User/NewCustomerRegister - 200 null text/plain; charset=utf-8 89.6751ms
+2023-12-15 22:15:43.180 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/api/User/GetCustomerDetails?customerId=100006 - null null
+2023-12-15 22:15:43.181 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.UserController.GetCustomerDetailsAsync (BankSystemManagement.Api)'
+2023-12-15 22:15:43.181 +01:00 [INF] Route matched with {action = "GetCustomerDetails", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankSystemManagement.Core.DTOs.CustomerDetailsDto]] GetCustomerDetailsAsync(Int32) on controller BankSystemManagement.Api.Controllers.UserController (BankSystemManagement.Api).
+2023-12-15 22:15:43.189 +01:00 [INF] Executing OkObjectResult, writing value of type 'BankSystemManagement.Core.DTOs.CustomerDetailsDto'.
+2023-12-15 22:15:43.190 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.UserController.GetCustomerDetailsAsync (BankSystemManagement.Api) in 8.5196ms
+2023-12-15 22:15:43.190 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.UserController.GetCustomerDetailsAsync (BankSystemManagement.Api)'
+2023-12-15 22:15:43.191 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/api/User/GetCustomerDetails?customerId=100006 - 200 null application/json; charset=utf-8 11.1786ms
+2023-12-15 22:17:19.285 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44362/api/User/NewAdminRegister - application/json 56
+2023-12-15 22:17:19.287 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.UserController.RegisterAdmin (BankSystemManagement.Api)'
+2023-12-15 22:17:19.294 +01:00 [INF] Route matched with {action = "RegisterAdmin", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean]] RegisterAdmin(BankSystemManagement.Core.DTOs.AdminRegistrationDto) on controller BankSystemManagement.Api.Controllers.UserController (BankSystemManagement.Api).
+2023-12-15 22:17:19.319 +01:00 [INF] Admin 'kalle' registered successfully.
+2023-12-15 22:17:19.321 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Boolean'.
+2023-12-15 22:17:19.334 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.UserController.RegisterAdmin (BankSystemManagement.Api) in 40.1928ms
+2023-12-15 22:17:19.334 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.UserController.RegisterAdmin (BankSystemManagement.Api)'
+2023-12-15 22:17:19.335 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44362/api/User/NewAdminRegister - 200 null application/json; charset=utf-8 49.881ms
+2023-12-15 22:18:54.398 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/api/Account/GetCustomerAccountOverview/100006 - null null
+2023-12-15 22:18:54.401 +01:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Customer)
+2023-12-15 22:18:54.413 +01:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2023-12-15 22:18:54.414 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/api/Account/GetCustomerAccountOverview/100006 - 403 null null 16.0932ms
+2023-12-15 22:19:36.165 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44362/api/Loan/CreateLoan - application/json 91
+2023-12-15 22:19:36.199 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.LoanController.CreateLoan (BankSystemManagement.Api)'
+2023-12-15 22:19:36.208 +01:00 [INF] Route matched with {action = "CreateLoan", controller = "Loan"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateLoan(BankSystemManagement.CommonInterface.DTOs.CreateLoanDto) on controller BankSystemManagement.Api.Controllers.LoanController (BankSystemManagement.Api).
+2023-12-15 22:19:36.279 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-12-15 22:19:36.280 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.LoanController.CreateLoan (BankSystemManagement.Api) in 72.4555ms
+2023-12-15 22:19:36.281 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.LoanController.CreateLoan (BankSystemManagement.Api)'
+2023-12-15 22:19:36.281 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44362/api/Loan/CreateLoan - 200 null text/plain; charset=utf-8 117.1812ms
+2023-12-15 22:22:12.003 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44362/api/User/login - application/json 51
+2023-12-15 22:22:12.010 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.UserController.Login (BankSystemManagement.Api)'
+2023-12-15 22:22:12.011 +01:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(BankSystemManagement.Core.DTOs.LoginRequestDto) on controller BankSystemManagement.Api.Controllers.UserController (BankSystemManagement.Api).
+2023-12-15 22:22:12.030 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-12-15 22:22:12.037 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.UserController.Login (BankSystemManagement.Api) in 25.761ms
+2023-12-15 22:22:12.039 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.UserController.Login (BankSystemManagement.Api)'
+2023-12-15 22:22:12.040 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44362/api/User/login - 200 null application/json; charset=utf-8 37.6866ms
+2023-12-15 22:22:40.601 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/api/Account/GetAccountTransactions/100006 - null null
+2023-12-15 22:22:40.610 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api)'
+2023-12-15 22:22:40.617 +01:00 [INF] Route matched with {action = "GetAccountTransactions", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BankSystemManagement.CommonInterface.DTOs.AccountTransactionDto]]] GetAccountTransactionsAsync(Int32) on controller BankSystemManagement.Api.Controllers.AccountController (BankSystemManagement.Api).
+2023-12-15 22:22:40.809 +01:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2023-12-15 22:22:40.810 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api) in 193.132ms
+2023-12-15 22:22:40.810 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api)'
+2023-12-15 22:22:40.811 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/api/Account/GetAccountTransactions/100006 - 404 null text/plain; charset=utf-8 209.6941ms
+2023-12-15 22:23:06.263 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/api/Account/GetAccountTransactions/11387 - null null
+2023-12-15 22:23:06.264 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api)'
+2023-12-15 22:23:06.264 +01:00 [INF] Route matched with {action = "GetAccountTransactions", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BankSystemManagement.CommonInterface.DTOs.AccountTransactionDto]]] GetAccountTransactionsAsync(Int32) on controller BankSystemManagement.Api.Controllers.AccountController (BankSystemManagement.Api).
+2023-12-15 22:23:06.447 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BankSystemManagement.CommonInterface.DTOs.AccountTransactionDto, BankSystemManagement.CommonInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-15 22:23:06.459 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api) in 195.5477ms
+2023-12-15 22:23:06.460 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api)'
+2023-12-15 22:23:06.460 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/api/Account/GetAccountTransactions/11387 - 200 null application/json; charset=utf-8 196.8515ms
+2023-12-15 22:23:17.111 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/api/Account/GetCustomerAccountOverview/100006 - null null
+2023-12-15 22:23:17.112 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.AccountController.GetCustomerAccountsOverviewAsync (BankSystemManagement.Api)'
+2023-12-15 22:23:17.117 +01:00 [INF] Route matched with {action = "GetCustomerAccountsOverview", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankSystemManagement.CommonInterface.DTOs.CustomerAccountOverviewDto]] GetCustomerAccountsOverviewAsync(Int32) on controller BankSystemManagement.Api.Controllers.AccountController (BankSystemManagement.Api).
+2023-12-15 22:23:17.145 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BankSystemManagement.CommonInterface.DTOs.CustomerAccountOverviewDto, BankSystemManagement.CommonInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-15 22:23:17.149 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.AccountController.GetCustomerAccountsOverviewAsync (BankSystemManagement.Api) in 32.2398ms
+2023-12-15 22:23:17.149 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.AccountController.GetCustomerAccountsOverviewAsync (BankSystemManagement.Api)'
+2023-12-15 22:23:17.150 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/api/Account/GetCustomerAccountOverview/100006 - 200 null application/json; charset=utf-8 38.355ms
+2023-12-15 22:23:45.664 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44362/api/Account/CreateBankAccount - application/json 48
+2023-12-15 22:23:45.666 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.AccountController.CreateBankAccountAsync (BankSystemManagement.Api)'
+2023-12-15 22:23:45.675 +01:00 [INF] Route matched with {action = "CreateBankAccount", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateBankAccountAsync(BankSystemManagement.CommonInterface.DTOs.BankAccountCreationDto) on controller BankSystemManagement.Api.Controllers.AccountController (BankSystemManagement.Api).
+2023-12-15 22:23:45.707 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-12-15 22:23:45.708 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.AccountController.CreateBankAccountAsync (BankSystemManagement.Api) in 32.4631ms
+2023-12-15 22:23:45.708 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.AccountController.CreateBankAccountAsync (BankSystemManagement.Api)'
+2023-12-15 22:23:45.709 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44362/api/Account/CreateBankAccount - 200 null text/plain; charset=utf-8 44.5025ms
+2023-12-15 22:24:34.999 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44362/api/Account/AccountTransfer - application/json 70
+2023-12-15 22:24:35.000 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.AccountController.AccountTransferAsync (BankSystemManagement.Api)'
+2023-12-15 22:24:35.009 +01:00 [INF] Route matched with {action = "AccountTransfer", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AccountTransferAsync(BankSystemManagement.CommonInterface.DTOs.AccountTransferDto) on controller BankSystemManagement.Api.Controllers.AccountController (BankSystemManagement.Api).
+2023-12-15 22:24:35.042 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-12-15 22:24:35.047 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.AccountController.AccountTransferAsync (BankSystemManagement.Api) in 38.0996ms
+2023-12-15 22:24:35.047 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.AccountController.AccountTransferAsync (BankSystemManagement.Api)'
+2023-12-15 22:24:35.048 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44362/api/Account/AccountTransfer - 200 null text/plain; charset=utf-8 49.0339ms
+2023-12-15 22:24:46.063 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/api/Account/GetAccountTransactions/11387 - null null
+2023-12-15 22:24:46.080 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api)'
+2023-12-15 22:24:46.080 +01:00 [INF] Route matched with {action = "GetAccountTransactions", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BankSystemManagement.CommonInterface.DTOs.AccountTransactionDto]]] GetAccountTransactionsAsync(Int32) on controller BankSystemManagement.Api.Controllers.AccountController (BankSystemManagement.Api).
+2023-12-15 22:24:46.300 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BankSystemManagement.CommonInterface.DTOs.AccountTransactionDto, BankSystemManagement.CommonInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-15 22:24:46.302 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api) in 221.325ms
+2023-12-15 22:24:46.302 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api)'
+2023-12-15 22:24:46.302 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/api/Account/GetAccountTransactions/11387 - 200 null application/json; charset=utf-8 238.954ms
+2023-12-15 22:24:52.133 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/api/Account/GetAccountTransactions/11387 - null null
+2023-12-15 22:24:52.134 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api)'
+2023-12-15 22:24:52.134 +01:00 [INF] Route matched with {action = "GetAccountTransactions", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BankSystemManagement.CommonInterface.DTOs.AccountTransactionDto]]] GetAccountTransactionsAsync(Int32) on controller BankSystemManagement.Api.Controllers.AccountController (BankSystemManagement.Api).
+2023-12-15 22:24:52.302 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BankSystemManagement.CommonInterface.DTOs.AccountTransactionDto, BankSystemManagement.CommonInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-15 22:24:52.303 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api) in 168.9165ms
+2023-12-15 22:24:52.303 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api)'
+2023-12-15 22:24:52.303 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/api/Account/GetAccountTransactions/11387 - 200 null application/json; charset=utf-8 170.949ms
+2023-12-15 22:24:56.810 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/api/Account/GetAccountTransactions/11388 - null null
+2023-12-15 22:24:56.812 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api)'
+2023-12-15 22:24:56.812 +01:00 [INF] Route matched with {action = "GetAccountTransactions", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BankSystemManagement.CommonInterface.DTOs.AccountTransactionDto]]] GetAccountTransactionsAsync(Int32) on controller BankSystemManagement.Api.Controllers.AccountController (BankSystemManagement.Api).
+2023-12-15 22:24:56.967 +01:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2023-12-15 22:24:56.968 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api) in 155.4017ms
+2023-12-15 22:24:56.968 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api)'
+2023-12-15 22:24:56.968 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/api/Account/GetAccountTransactions/11388 - 404 null text/plain; charset=utf-8 157.9119ms
+2023-12-15 22:25:46.103 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/api/Account/GetAccountTransactions/11388 - null null
+2023-12-15 22:25:46.104 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api)'
+2023-12-15 22:25:46.104 +01:00 [INF] Route matched with {action = "GetAccountTransactions", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BankSystemManagement.CommonInterface.DTOs.AccountTransactionDto]]] GetAccountTransactionsAsync(Int32) on controller BankSystemManagement.Api.Controllers.AccountController (BankSystemManagement.Api).
+2023-12-15 22:25:46.327 +01:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2023-12-15 22:25:46.332 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api) in 227.0396ms
+2023-12-15 22:25:46.332 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api)'
+2023-12-15 22:25:46.332 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/api/Account/GetAccountTransactions/11388 - 404 null text/plain; charset=utf-8 228.8952ms
+2023-12-15 22:25:59.136 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/api/Account/GetCustomerAccountOverview/100006 - null null
+2023-12-15 22:25:59.137 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.AccountController.GetCustomerAccountsOverviewAsync (BankSystemManagement.Api)'
+2023-12-15 22:25:59.137 +01:00 [INF] Route matched with {action = "GetCustomerAccountsOverview", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BankSystemManagement.CommonInterface.DTOs.CustomerAccountOverviewDto]] GetCustomerAccountsOverviewAsync(Int32) on controller BankSystemManagement.Api.Controllers.AccountController (BankSystemManagement.Api).
+2023-12-15 22:25:59.166 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BankSystemManagement.CommonInterface.DTOs.CustomerAccountOverviewDto, BankSystemManagement.CommonInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-15 22:25:59.167 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.AccountController.GetCustomerAccountsOverviewAsync (BankSystemManagement.Api) in 28.9675ms
+2023-12-15 22:25:59.168 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.AccountController.GetCustomerAccountsOverviewAsync (BankSystemManagement.Api)'
+2023-12-15 22:25:59.168 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/api/Account/GetCustomerAccountOverview/100006 - 200 null application/json; charset=utf-8 32.3455ms
+2023-12-15 22:26:39.412 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44362/api/Account/AccountTransfer - application/json 70
+2023-12-15 22:26:39.414 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.AccountController.AccountTransferAsync (BankSystemManagement.Api)'
+2023-12-15 22:26:39.414 +01:00 [INF] Route matched with {action = "AccountTransfer", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AccountTransferAsync(BankSystemManagement.CommonInterface.DTOs.AccountTransferDto) on controller BankSystemManagement.Api.Controllers.AccountController (BankSystemManagement.Api).
+2023-12-15 22:26:39.430 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-12-15 22:26:39.432 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.AccountController.AccountTransferAsync (BankSystemManagement.Api) in 17.9013ms
+2023-12-15 22:26:39.432 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.AccountController.AccountTransferAsync (BankSystemManagement.Api)'
+2023-12-15 22:26:39.432 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44362/api/Account/AccountTransfer - 200 null text/plain; charset=utf-8 19.7146ms
+2023-12-15 22:28:10.225 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44362/api/Account/AccountTransfer - application/json 70
+2023-12-15 22:28:10.232 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.AccountController.AccountTransferAsync (BankSystemManagement.Api)'
+2023-12-15 22:28:10.232 +01:00 [INF] Route matched with {action = "AccountTransfer", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AccountTransferAsync(BankSystemManagement.CommonInterface.DTOs.AccountTransferDto) on controller BankSystemManagement.Api.Controllers.AccountController (BankSystemManagement.Api).
+2023-12-15 22:29:54.942 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-12-15 22:29:54.942 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.AccountController.AccountTransferAsync (BankSystemManagement.Api) in 104709.7753ms
+2023-12-15 22:29:54.943 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.AccountController.AccountTransferAsync (BankSystemManagement.Api)'
+2023-12-15 22:36:11.898 +01:00 [INF] User profile is available. Using 'C:\Users\alvin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-15 22:36:12.027 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/swagger/index.html - null null
+2023-12-15 22:36:12.055 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-15 22:36:12.055 +01:00 [INF] Hosting environment: Development
+2023-12-15 22:36:12.055 +01:00 [INF] Content root path: D:\Visual Studio c#\Asp.net core API\BankSystemManagement.Api\BankSystemManagement.Api
+2023-12-15 22:36:12.172 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/swagger/index.html - 200 null text/html;charset=utf-8 144.4648ms
+2023-12-15 22:36:12.192 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-15 22:36:12.198 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 2.4325ms
+2023-12-15 22:36:12.296 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/_vs/browserLink - null null
+2023-12-15 22:36:12.329 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/_vs/browserLink - 200 null text/javascript; charset=UTF-8 32.1227ms
+2023-12-15 22:36:12.615 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/swagger/v1/swagger.json - null null
+2023-12-15 22:36:12.680 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 65.5949ms
+2023-12-15 22:36:31.467 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44362/api/User/login - application/json 51
+2023-12-15 22:36:31.553 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.UserController.Login (BankSystemManagement.Api)'
+2023-12-15 22:36:31.566 +01:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(BankSystemManagement.Core.DTOs.LoginRequestDto) on controller BankSystemManagement.Api.Controllers.UserController (BankSystemManagement.Api).
+2023-12-15 22:36:31.912 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-12-15 22:36:31.919 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.UserController.Login (BankSystemManagement.Api) in 349.9589ms
+2023-12-15 22:36:31.920 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.UserController.Login (BankSystemManagement.Api)'
+2023-12-15 22:36:31.920 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44362/api/User/login - 200 null application/json; charset=utf-8 454.0726ms
+2023-12-15 22:37:07.787 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44362/api/Account/AccountTransfer - application/json 70
+2023-12-15 22:37:07.836 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.AccountController.AccountTransferAsync (BankSystemManagement.Api)'
+2023-12-15 22:37:07.839 +01:00 [INF] Route matched with {action = "AccountTransfer", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AccountTransferAsync(BankSystemManagement.CommonInterface.DTOs.AccountTransferDto) on controller BankSystemManagement.Api.Controllers.AccountController (BankSystemManagement.Api).
+2023-12-15 22:37:52.886 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-12-15 22:37:52.887 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.AccountController.AccountTransferAsync (BankSystemManagement.Api) in 45048.293ms
+2023-12-15 22:37:52.887 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.AccountController.AccountTransferAsync (BankSystemManagement.Api)'
+2023-12-15 22:37:52.887 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44362/api/Account/AccountTransfer - 200 null text/plain; charset=utf-8 45100.8235ms
+2023-12-15 22:38:09.464 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/api/Account/GetAccountTransactions/11387 - null null
+2023-12-15 22:38:09.474 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api)'
+2023-12-15 22:38:09.491 +01:00 [INF] Route matched with {action = "GetAccountTransactions", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BankSystemManagement.CommonInterface.DTOs.AccountTransactionDto]]] GetAccountTransactionsAsync(Int32) on controller BankSystemManagement.Api.Controllers.AccountController (BankSystemManagement.Api).
+2023-12-15 22:38:09.705 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BankSystemManagement.CommonInterface.DTOs.AccountTransactionDto, BankSystemManagement.CommonInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-15 22:38:09.713 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api) in 221.7905ms
+2023-12-15 22:38:09.713 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api)'
+2023-12-15 22:38:09.714 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/api/Account/GetAccountTransactions/11387 - 200 null application/json; charset=utf-8 249.8906ms
+2023-12-15 22:38:26.556 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/api/Account/GetAccountTransactions/11388 - null null
+2023-12-15 22:38:26.558 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api)'
+2023-12-15 22:38:26.558 +01:00 [INF] Route matched with {action = "GetAccountTransactions", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BankSystemManagement.CommonInterface.DTOs.AccountTransactionDto]]] GetAccountTransactionsAsync(Int32) on controller BankSystemManagement.Api.Controllers.AccountController (BankSystemManagement.Api).
+2023-12-15 22:38:26.765 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BankSystemManagement.CommonInterface.DTOs.AccountTransactionDto, BankSystemManagement.CommonInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-15 22:38:26.766 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api) in 207.5511ms
+2023-12-15 22:38:26.766 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api)'
+2023-12-15 22:38:26.766 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/api/Account/GetAccountTransactions/11388 - 200 null application/json; charset=utf-8 210.8681ms
+2023-12-15 22:43:51.726 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44362/api/Account/AccountTransfer - application/json 70
+2023-12-15 22:43:51.754 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.AccountController.AccountTransferAsync (BankSystemManagement.Api)'
+2023-12-15 22:43:51.755 +01:00 [INF] Route matched with {action = "AccountTransfer", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AccountTransferAsync(BankSystemManagement.CommonInterface.DTOs.AccountTransferDto) on controller BankSystemManagement.Api.Controllers.AccountController (BankSystemManagement.Api).
+2023-12-15 22:44:06.587 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-12-15 22:44:06.588 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.AccountController.AccountTransferAsync (BankSystemManagement.Api) in 14832.8675ms
+2023-12-15 22:44:06.588 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.AccountController.AccountTransferAsync (BankSystemManagement.Api)'
+2023-12-15 22:44:06.588 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44362/api/Account/AccountTransfer - 200 null text/plain; charset=utf-8 14863.1249ms
+2023-12-15 22:44:18.844 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/api/Account/GetAccountTransactions/11388 - null null
+2023-12-15 22:44:18.846 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api)'
+2023-12-15 22:44:18.846 +01:00 [INF] Route matched with {action = "GetAccountTransactions", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BankSystemManagement.CommonInterface.DTOs.AccountTransactionDto]]] GetAccountTransactionsAsync(Int32) on controller BankSystemManagement.Api.Controllers.AccountController (BankSystemManagement.Api).
+2023-12-15 22:44:19.052 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BankSystemManagement.CommonInterface.DTOs.AccountTransactionDto, BankSystemManagement.CommonInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-15 22:44:19.053 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api) in 206.1544ms
+2023-12-15 22:44:19.053 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api)'
+2023-12-15 22:44:19.053 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/api/Account/GetAccountTransactions/11388 - 200 null application/json; charset=utf-8 208.7984ms
+2023-12-15 22:49:09.482 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44362/api/Account/AccountTransfer - application/json 70
+2023-12-15 22:49:09.483 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.AccountController.AccountTransferAsync (BankSystemManagement.Api)'
+2023-12-15 22:49:09.484 +01:00 [INF] Route matched with {action = "AccountTransfer", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AccountTransferAsync(BankSystemManagement.CommonInterface.DTOs.AccountTransferDto) on controller BankSystemManagement.Api.Controllers.AccountController (BankSystemManagement.Api).
+2023-12-15 22:49:16.756 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-12-15 22:49:16.757 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.AccountController.AccountTransferAsync (BankSystemManagement.Api) in 7273.2445ms
+2023-12-15 22:49:16.757 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.AccountController.AccountTransferAsync (BankSystemManagement.Api)'
+2023-12-15 22:49:16.758 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44362/api/Account/AccountTransfer - 200 null text/plain; charset=utf-8 7275.4077ms
+2023-12-15 22:49:23.833 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/api/Account/GetAccountTransactions/11388 - null null
+2023-12-15 22:49:23.834 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api)'
+2023-12-15 22:49:23.834 +01:00 [INF] Route matched with {action = "GetAccountTransactions", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BankSystemManagement.CommonInterface.DTOs.AccountTransactionDto]]] GetAccountTransactionsAsync(Int32) on controller BankSystemManagement.Api.Controllers.AccountController (BankSystemManagement.Api).
+2023-12-15 22:49:24.028 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BankSystemManagement.CommonInterface.DTOs.AccountTransactionDto, BankSystemManagement.CommonInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-15 22:49:24.029 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api) in 195.4111ms
+2023-12-15 22:49:24.029 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api)'
+2023-12-15 22:49:24.029 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/api/Account/GetAccountTransactions/11388 - 200 null application/json; charset=utf-8 197.0145ms
+2023-12-15 22:51:14.026 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44362/api/Account/AccountTransfer - application/json 70
+2023-12-15 22:51:14.027 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.AccountController.AccountTransferAsync (BankSystemManagement.Api)'
+2023-12-15 22:51:14.027 +01:00 [INF] Route matched with {action = "AccountTransfer", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AccountTransferAsync(BankSystemManagement.CommonInterface.DTOs.AccountTransferDto) on controller BankSystemManagement.Api.Controllers.AccountController (BankSystemManagement.Api).
+2023-12-15 22:51:17.634 +01:00 [ERR] Error during intra-account transfer: Procedure or function sp_AccountTransfer has too many arguments specified.
+2023-12-15 22:51:17.664 +01:00 [ERR] Error during account transfer: Procedure or function sp_AccountTransfer has too many arguments specified.
+2023-12-15 22:51:17.692 +01:00 [ERR] Error during intra-account transfer: Procedure or function sp_AccountTransfer has too many arguments specified.
+2023-12-15 22:51:18.792 +01:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-12-15 22:51:18.793 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.AccountController.AccountTransferAsync (BankSystemManagement.Api) in 4765.768ms
+2023-12-15 22:51:18.793 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.AccountController.AccountTransferAsync (BankSystemManagement.Api)'
+2023-12-15 22:51:18.794 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44362/api/Account/AccountTransfer - 500 null text/plain; charset=utf-8 4768.1161ms
+2023-12-15 22:51:37.176 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44362/api/Account/AccountTransfer - application/json 70
+2023-12-15 22:51:37.191 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.AccountController.AccountTransferAsync (BankSystemManagement.Api)'
+2023-12-15 22:51:37.191 +01:00 [INF] Route matched with {action = "AccountTransfer", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AccountTransferAsync(BankSystemManagement.CommonInterface.DTOs.AccountTransferDto) on controller BankSystemManagement.Api.Controllers.AccountController (BankSystemManagement.Api).
+2023-12-15 22:54:01.400 +01:00 [ERR] Error during intra-account transfer: Procedure or function sp_AccountTransfer has too many arguments specified.
+2023-12-15 22:54:01.439 +01:00 [ERR] Error during account transfer: Procedure or function sp_AccountTransfer has too many arguments specified.
+2023-12-15 22:54:01.462 +01:00 [ERR] Error during intra-account transfer: Procedure or function sp_AccountTransfer has too many arguments specified.
+2023-12-15 22:54:02.311 +01:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-12-15 22:54:02.312 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.AccountController.AccountTransferAsync (BankSystemManagement.Api) in 145120.381ms
+2023-12-15 22:54:02.312 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.AccountController.AccountTransferAsync (BankSystemManagement.Api)'
+2023-12-15 22:54:02.312 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44362/api/Account/AccountTransfer - 500 null text/plain; charset=utf-8 145136.6082ms
+2023-12-15 22:54:04.844 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44362/api/Account/AccountTransfer - application/json 70
+2023-12-15 22:54:04.845 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.AccountController.AccountTransferAsync (BankSystemManagement.Api)'
+2023-12-15 22:54:04.845 +01:00 [INF] Route matched with {action = "AccountTransfer", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AccountTransferAsync(BankSystemManagement.CommonInterface.DTOs.AccountTransferDto) on controller BankSystemManagement.Api.Controllers.AccountController (BankSystemManagement.Api).
+2023-12-15 22:54:07.308 +01:00 [ERR] Error during intra-account transfer: Procedure or function sp_AccountTransfer has too many arguments specified.
+2023-12-15 22:54:07.338 +01:00 [ERR] Error during account transfer: Procedure or function sp_AccountTransfer has too many arguments specified.
+2023-12-15 22:54:07.364 +01:00 [ERR] Error during intra-account transfer: Procedure or function sp_AccountTransfer has too many arguments specified.
+2023-12-15 22:54:08.372 +01:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-12-15 22:54:08.372 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.AccountController.AccountTransferAsync (BankSystemManagement.Api) in 3527.175ms
+2023-12-15 22:54:08.372 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.AccountController.AccountTransferAsync (BankSystemManagement.Api)'
+2023-12-15 22:54:08.373 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44362/api/Account/AccountTransfer - 500 null text/plain; charset=utf-8 3528.7233ms
+2023-12-15 22:54:21.898 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44362/api/Account/AccountTransfer - application/json 70
+2023-12-15 22:54:21.899 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.AccountController.AccountTransferAsync (BankSystemManagement.Api)'
+2023-12-15 22:54:21.900 +01:00 [INF] Route matched with {action = "AccountTransfer", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AccountTransferAsync(BankSystemManagement.CommonInterface.DTOs.AccountTransferDto) on controller BankSystemManagement.Api.Controllers.AccountController (BankSystemManagement.Api).
+2023-12-15 22:54:35.763 +01:00 [ERR] Error during intra-account transfer: Procedure or function sp_AccountTransfer has too many arguments specified.
+2023-12-15 22:58:48.761 +01:00 [INF] User profile is available. Using 'C:\Users\alvin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-15 22:58:48.970 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/swagger/index.html - null null
+2023-12-15 22:58:48.996 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-15 22:58:48.998 +01:00 [INF] Hosting environment: Development
+2023-12-15 22:58:48.998 +01:00 [INF] Content root path: D:\Visual Studio c#\Asp.net core API\BankSystemManagement.Api\BankSystemManagement.Api
+2023-12-15 22:58:49.115 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/swagger/index.html - 200 null text/html;charset=utf-8 147.6598ms
+2023-12-15 22:58:49.150 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-15 22:58:49.155 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 2.7972ms
+2023-12-15 22:58:49.199 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/_vs/browserLink - null null
+2023-12-15 22:58:49.225 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/_vs/browserLink - 200 null text/javascript; charset=UTF-8 26.7216ms
+2023-12-15 22:58:49.372 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/swagger/v1/swagger.json - null null
+2023-12-15 22:58:49.462 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 89.8991ms
+2023-12-15 22:59:15.165 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44362/api/User/login - application/json 51
+2023-12-15 22:59:15.300 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.UserController.Login (BankSystemManagement.Api)'
+2023-12-15 22:59:15.335 +01:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(BankSystemManagement.Core.DTOs.LoginRequestDto) on controller BankSystemManagement.Api.Controllers.UserController (BankSystemManagement.Api).
+2023-12-15 22:59:17.086 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-12-15 22:59:17.095 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.UserController.Login (BankSystemManagement.Api) in 1755.2764ms
+2023-12-15 22:59:17.095 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.UserController.Login (BankSystemManagement.Api)'
+2023-12-15 22:59:17.097 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44362/api/User/login - 200 null application/json; charset=utf-8 1932.1816ms
+2023-12-15 22:59:53.384 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44362/api/Account/AccountTransfer - application/json 70
+2023-12-15 22:59:53.475 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.AccountController.AccountTransferAsync (BankSystemManagement.Api)'
+2023-12-15 22:59:53.481 +01:00 [INF] Route matched with {action = "AccountTransfer", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AccountTransferAsync(BankSystemManagement.CommonInterface.DTOs.AccountTransferDto) on controller BankSystemManagement.Api.Controllers.AccountController (BankSystemManagement.Api).
+2023-12-15 22:59:53.577 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-12-15 22:59:53.578 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.AccountController.AccountTransferAsync (BankSystemManagement.Api) in 96.4921ms
+2023-12-15 22:59:53.578 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.AccountController.AccountTransferAsync (BankSystemManagement.Api)'
+2023-12-15 22:59:53.578 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44362/api/Account/AccountTransfer - 200 null text/plain; charset=utf-8 194.4506ms
+2023-12-15 23:00:06.452 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/api/Account/GetAccountTransactions/11388 - null null
+2023-12-15 23:00:06.461 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api)'
+2023-12-15 23:00:06.470 +01:00 [INF] Route matched with {action = "GetAccountTransactions", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BankSystemManagement.CommonInterface.DTOs.AccountTransactionDto]]] GetAccountTransactionsAsync(Int32) on controller BankSystemManagement.Api.Controllers.AccountController (BankSystemManagement.Api).
+2023-12-15 23:00:06.722 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BankSystemManagement.CommonInterface.DTOs.AccountTransactionDto, BankSystemManagement.CommonInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-15 23:00:06.733 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api) in 262.9369ms
+2023-12-15 23:00:06.733 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api)'
+2023-12-15 23:00:06.733 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/api/Account/GetAccountTransactions/11388 - 200 null application/json; charset=utf-8 281.7555ms
+2023-12-15 23:00:24.012 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/api/Account/GetAccountTransactions/11387 - null null
+2023-12-15 23:00:24.015 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api)'
+2023-12-15 23:00:24.016 +01:00 [INF] Route matched with {action = "GetAccountTransactions", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BankSystemManagement.CommonInterface.DTOs.AccountTransactionDto]]] GetAccountTransactionsAsync(Int32) on controller BankSystemManagement.Api.Controllers.AccountController (BankSystemManagement.Api).
+2023-12-15 23:00:24.381 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BankSystemManagement.CommonInterface.DTOs.AccountTransactionDto, BankSystemManagement.CommonInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-15 23:00:24.389 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api) in 373.6057ms
+2023-12-15 23:00:24.389 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api)'
+2023-12-15 23:00:24.390 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/api/Account/GetAccountTransactions/11387 - 200 null application/json; charset=utf-8 377.706ms
+2023-12-15 23:07:30.681 +01:00 [INF] User profile is available. Using 'C:\Users\alvin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-15 23:07:30.844 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/swagger/index.html - null null
+2023-12-15 23:07:30.876 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-15 23:07:30.877 +01:00 [INF] Hosting environment: Development
+2023-12-15 23:07:30.877 +01:00 [INF] Content root path: D:\Visual Studio c#\Asp.net core API\BankSystemManagement.Api\BankSystemManagement.Api
+2023-12-15 23:07:30.962 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/swagger/index.html - 200 null text/html;charset=utf-8 119.7352ms
+2023-12-15 23:07:30.976 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-15 23:07:30.983 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 3.7873ms
+2023-12-15 23:07:31.246 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/swagger/v1/swagger.json - null null
+2023-12-15 23:07:31.322 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 75.802ms
+2023-12-15 23:07:59.886 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44362/api/User/login - application/json 51
+2023-12-15 23:08:00.009 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.UserController.Login (BankSystemManagement.Api)'
+2023-12-15 23:08:00.043 +01:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(BankSystemManagement.Core.DTOs.LoginRequestDto) on controller BankSystemManagement.Api.Controllers.UserController (BankSystemManagement.Api).
+2023-12-15 23:08:00.550 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-12-15 23:08:00.557 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.UserController.Login (BankSystemManagement.Api) in 511.4278ms
+2023-12-15 23:08:00.558 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.UserController.Login (BankSystemManagement.Api)'
+2023-12-15 23:08:00.560 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44362/api/User/login - 200 null application/json; charset=utf-8 675.0133ms
+2023-12-15 23:08:20.886 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/api/Account/GetAccountTransactions/11388 - null null
+2023-12-15 23:08:21.023 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api)'
+2023-12-15 23:08:21.032 +01:00 [INF] Route matched with {action = "GetAccountTransactions", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BankSystemManagement.CommonInterface.DTOs.AccountTransactionDto]]] GetAccountTransactionsAsync(Int32) on controller BankSystemManagement.Api.Controllers.AccountController (BankSystemManagement.Api).
+2023-12-15 23:08:21.223 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BankSystemManagement.CommonInterface.DTOs.AccountTransactionDto, BankSystemManagement.CommonInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-15 23:08:21.233 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api) in 200.9969ms
+2023-12-15 23:08:21.233 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api)'
+2023-12-15 23:08:21.234 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/api/Account/GetAccountTransactions/11388 - 200 null application/json; charset=utf-8 349.1673ms
+2023-12-15 23:08:30.107 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/api/Account/GetAccountTransactions/11387 - null null
+2023-12-15 23:08:30.115 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api)'
+2023-12-15 23:08:30.115 +01:00 [INF] Route matched with {action = "GetAccountTransactions", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BankSystemManagement.CommonInterface.DTOs.AccountTransactionDto]]] GetAccountTransactionsAsync(Int32) on controller BankSystemManagement.Api.Controllers.AccountController (BankSystemManagement.Api).
+2023-12-15 23:08:30.271 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BankSystemManagement.CommonInterface.DTOs.AccountTransactionDto, BankSystemManagement.CommonInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-15 23:08:30.272 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api) in 156.4853ms
+2023-12-15 23:08:30.272 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api)'
+2023-12-15 23:08:30.273 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/api/Account/GetAccountTransactions/11387 - 200 null application/json; charset=utf-8 166.3899ms
+2023-12-15 23:08:59.557 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44362/api/Account/AccountTransfer - application/json 68
+2023-12-15 23:08:59.586 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.AccountController.AccountTransferAsync (BankSystemManagement.Api)'
+2023-12-15 23:08:59.591 +01:00 [INF] Route matched with {action = "AccountTransfer", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AccountTransferAsync(BankSystemManagement.CommonInterface.DTOs.AccountTransferDto) on controller BankSystemManagement.Api.Controllers.AccountController (BankSystemManagement.Api).
+2023-12-15 23:08:59.640 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-12-15 23:08:59.641 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.AccountController.AccountTransferAsync (BankSystemManagement.Api) in 49.7831ms
+2023-12-15 23:08:59.641 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.AccountController.AccountTransferAsync (BankSystemManagement.Api)'
+2023-12-15 23:08:59.641 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44362/api/Account/AccountTransfer - 200 null text/plain; charset=utf-8 85.3679ms
+2023-12-15 23:09:08.237 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/api/Account/GetAccountTransactions/11387 - null null
+2023-12-15 23:09:08.238 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api)'
+2023-12-15 23:09:08.239 +01:00 [INF] Route matched with {action = "GetAccountTransactions", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BankSystemManagement.CommonInterface.DTOs.AccountTransactionDto]]] GetAccountTransactionsAsync(Int32) on controller BankSystemManagement.Api.Controllers.AccountController (BankSystemManagement.Api).
+2023-12-15 23:09:08.397 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BankSystemManagement.CommonInterface.DTOs.AccountTransactionDto, BankSystemManagement.CommonInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-15 23:09:08.399 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api) in 159.6375ms
+2023-12-15 23:09:08.399 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api)'
+2023-12-15 23:09:08.400 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/api/Account/GetAccountTransactions/11387 - 200 null application/json; charset=utf-8 162.6111ms
+2023-12-15 23:09:16.166 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/api/Account/GetAccountTransactions/11388 - null null
+2023-12-15 23:09:16.168 +01:00 [INF] Executing endpoint 'BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api)'
+2023-12-15 23:09:16.168 +01:00 [INF] Route matched with {action = "GetAccountTransactions", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BankSystemManagement.CommonInterface.DTOs.AccountTransactionDto]]] GetAccountTransactionsAsync(Int32) on controller BankSystemManagement.Api.Controllers.AccountController (BankSystemManagement.Api).
+2023-12-15 23:09:16.323 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BankSystemManagement.CommonInterface.DTOs.AccountTransactionDto, BankSystemManagement.CommonInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-15 23:09:16.323 +01:00 [INF] Executed action BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api) in 155.7566ms
+2023-12-15 23:09:16.324 +01:00 [INF] Executed endpoint 'BankSystemManagement.Api.Controllers.AccountController.GetAccountTransactionsAsync (BankSystemManagement.Api)'
+2023-12-15 23:09:16.324 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/api/Account/GetAccountTransactions/11388 - 200 null application/json; charset=utf-8 157.541ms
+2023-12-15 23:10:37.915 +01:00 [INF] User profile is available. Using 'C:\Users\alvin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-15 23:10:38.066 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/swagger/index.html - null null
+2023-12-15 23:10:38.101 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-15 23:10:38.107 +01:00 [INF] Hosting environment: Development
+2023-12-15 23:10:38.108 +01:00 [INF] Content root path: D:\Visual Studio c#\Asp.net core API\BankSystemManagement.Api\BankSystemManagement.Api
+2023-12-15 23:10:38.234 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/swagger/index.html - 200 null text/html;charset=utf-8 173.0037ms
+2023-12-15 23:10:38.249 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - null null
+2023-12-15 23:10:38.255 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 4.1511ms
+2023-12-15 23:10:38.302 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/_vs/browserLink - null null
+2023-12-15 23:10:38.347 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.9719ms
+2023-12-15 23:10:38.479 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44362/swagger/v1/swagger.json - null null
+2023-12-15 23:10:38.560 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44362/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 79.887ms

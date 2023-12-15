@@ -2,7 +2,9 @@
 using BankSystemManagement.CommonInterface.DTOs;
 using BankSystemManagement.Core.Interfaces;
 using BankSystemManagement.Data.Interfaces;
+using BankSystemManagement.Domain.Models;
 using Microsoft.Extensions.Logging;
+using Microsoft.Identity.Client;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,22 +28,64 @@ namespace BankSystemManagement.Core.Services
 
         public async Task<bool> AccountTransferAsync(int fromAccountId, int toAccountId, decimal amount)
         {
-            throw new NotImplementedException();
+            try
+            {
+                // Check if the source account has sufficient balance
+                decimal fromAccountBalance = await _accountRepo.GetBalanceAsync(fromAccountId);
+
+                if (fromAccountBalance < amount)
+                {
+                    // Insufficient balance
+                    return false;
+                }
+
+                // Initiate the account transfer
+                await _accountRepo.AccountTransferAsync(fromAccountId, toAccountId, amount);
+
+                // The transfer was successful
+                return true;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Error during account transfer: {ex.Message}");
+                throw;
+            }
         }
 
         public async Task<bool> CreateBankAccountAsync(int customerId, int accountTypeId)
         {
-            throw new NotImplementedException();
+
+            try
+            {
+                // Check if the customer exists before creating an account
+                bool customerExists = await _accountRepo.CheckCustomerExistsAsync(customerId);
+
+                if (!customerExists)
+                {
+                    _logger.LogWarning("Customer does not exist.");
+                    return false;
+                }
+                // Initiate the Bank Account Creation
+                await _accountRepo.CreateBankAccountAsync(customerId, accountTypeId);
+
+                // Bank Creation is Successfull
+                return true;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Error during Bank Creation: {ex.Message}");
+                throw;
+            }
         }
 
         public async Task<IEnumerable<AccountTransactionDto>> GetAccountTransactionsAsync(int accountId)
         {
-            throw new NotImplementedException();
+            return await _accountRepo.GetAccountTransactionsAsync(accountId);
         }
 
         public async Task<IEnumerable<CustomerAccountOverviewDto>> GetCustomerAccountsOverviewAsync(int customerId)
         {
-            throw new NotImplementedException();
+            return await _accountRepo.GetCustomerAccountsOverviewAsync(customerId);
         }
     }
 }

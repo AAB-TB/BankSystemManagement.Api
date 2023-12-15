@@ -7,7 +7,9 @@ using System.Threading.Tasks;
 
 namespace BankSystemManagement.Data.Interfaces
 {
-    public interface ILoanRepo:ICommonLoanService
+    public interface ILoanRepo:ICommonLoanService,ICommonValidationService
     {
+        Task<bool> CheckAdminExistsAsync(int adminUserId);
+        Task<bool> CheckAccountTypeExistsAsync(int customerUserId, int accountTypesId);
     }
 }

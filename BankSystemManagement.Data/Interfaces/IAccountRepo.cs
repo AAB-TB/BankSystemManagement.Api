@@ -7,7 +7,9 @@ using System.Threading.Tasks;
 
 namespace BankSystemManagement.Data.Interfaces
 {
-    public interface IAccountRepo:ICommonAccountService
+    public interface IAccountRepo:ICommonAccountService,ICommonValidationService
     {
+        Task<decimal> GetBalanceAsync(int accountId);
+        
     }
 }

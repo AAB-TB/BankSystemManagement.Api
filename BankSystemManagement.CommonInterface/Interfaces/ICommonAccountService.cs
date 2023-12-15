@@ -13,5 +13,6 @@ namespace BankSystemManagement.CommonInterface.Interfaces
         Task<IEnumerable<AccountTransactionDto>> GetAccountTransactionsAsync(int accountId);
         Task<bool> CreateBankAccountAsync(int customerId, int accountTypeId);
         Task<bool> AccountTransferAsync(int fromAccountId, int toAccountId, decimal amount);
+        
     }
 }
