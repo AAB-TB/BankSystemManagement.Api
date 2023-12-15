@@ -143,6 +143,35 @@ namespace BankSystemManagement.Data.Repos
             }
         }
 
+        public async Task<bool> CheckAccountOwnershipAsync(int userId, int accountId)
+        {
+            try
+            {
+                using (var connection = _dapperContext.GetDbConnection())
+                {
+                    connection.Open();
+
+                    var parameters = new DynamicParameters();
+                    parameters.Add("UserID", userId);
+                    parameters.Add("AccountID", accountId);
+                    parameters.Add("IsOwner", dbType: DbType.Boolean, direction: ParameterDirection.Output);
+
+                    // Execute the stored procedure to check if the user owns the account
+                    await connection.ExecuteAsync("sp_CheckAccountOwnership", parameters, commandType: CommandType.StoredProcedure);
+
+                    // Check the value of the output parameter
+                    var isOwner = parameters.Get<bool>("IsOwner");
+
+                    // Return true if the user owns the account
+                    return isOwner;
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Error checking account ownership: {ex.Message}");
+                throw;
+            }
+        }
 
         public async Task<IEnumerable<AccountTransactionDto>> GetAccountTransactionsAsync(int accountId)
         {

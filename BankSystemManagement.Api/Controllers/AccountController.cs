@@ -3,6 +3,7 @@ using BankSystemManagement.Core.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace BankSystemManagement.Api.Controllers
 {
@@ -74,7 +75,22 @@ namespace BankSystemManagement.Api.Controllers
         {
             try
             {
-                var result = await _accountService.CreateBankAccountAsync(bankAccountCreationDto.CustomerId, bankAccountCreationDto.AccountTypeId);
+                // Get the logged-in user's ID from the claims
+                var loggedInUserId = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+                if (string.IsNullOrEmpty(loggedInUserId))
+                {
+                    // User ID not found in claims
+                    return Unauthorized("User not authenticated.");
+                }
+
+                // Convert the user ID to an integer if needed
+                if (!int.TryParse(loggedInUserId, out int userId))
+                {
+                    return BadRequest("Invalid user ID format.");
+                }
+
+                var result = await _accountService.CreateBankAccountAsync(userId, bankAccountCreationDto.CustomerId, bankAccountCreationDto.AccountTypeId);
 
                 if (result)
                 {
@@ -97,7 +113,22 @@ namespace BankSystemManagement.Api.Controllers
         {
             try
             {
-                var result = await _accountService.AccountTransferAsync(transferDto.FromAccountId, transferDto.ToAccountId, transferDto.Amount);
+                // Get the logged-in user's ID from the claims
+                var loggedInUserId = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+                if (string.IsNullOrEmpty(loggedInUserId))
+                {
+                    // User ID not found in claims
+                    return Unauthorized("User not authenticated.");
+                }
+
+                // Convert the user ID to an integer if needed
+                if (!int.TryParse(loggedInUserId, out int userId))
+                {
+                    return BadRequest("Invalid user ID format.");
+                }
+
+                var result = await _accountService.AccountTransferAsync(userId, transferDto.FromAccountId, transferDto.ToAccountId, transferDto.Amount);
 
                 if (result)
                 {

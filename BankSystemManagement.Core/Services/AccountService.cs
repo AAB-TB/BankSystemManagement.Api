@@ -26,10 +26,20 @@ namespace BankSystemManagement.Core.Services
             _logger = logger;
         }
 
-        public async Task<bool> AccountTransferAsync(int fromAccountId, int toAccountId, decimal amount)
+        public async Task<bool> AccountTransferAsync(int userId,int fromAccountId, int toAccountId, decimal amount)
         {
             try
             {
+                // Check if the source account belongs to the logged-in user
+                bool isAuthorized = await _accountRepo.CheckAccountOwnershipAsync(userId, fromAccountId);
+
+                if (!isAuthorized)
+                {
+                    // The logged-in user does not own the source account
+                    _logger.LogWarning("Unauthorized account access.");
+                    return false;
+                }
+
                 // Check if the source account has sufficient balance
                 decimal fromAccountBalance = await _accountRepo.GetBalanceAsync(fromAccountId);
 
@@ -52,11 +62,18 @@ namespace BankSystemManagement.Core.Services
             }
         }
 
-        public async Task<bool> CreateBankAccountAsync(int customerId, int accountTypeId)
+        public async Task<bool> CreateBankAccountAsync(int userId,int customerId, int accountTypeId)
         {
 
             try
             {
+               
+                if (userId!=customerId)
+                {
+                    // The logged-in user does not own the source account
+                    _logger.LogWarning("Unauthorized account access.");
+                    return false;
+                }
                 // Check if the customer exists before creating an account
                 bool customerExists = await _accountRepo.CheckCustomerExistsAsync(customerId);
 

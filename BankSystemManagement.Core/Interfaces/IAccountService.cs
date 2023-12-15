@@ -9,5 +9,7 @@ namespace BankSystemManagement.Core.Interfaces
 {
     public interface IAccountService:ICommonAccountService
     {
+        Task<bool> AccountTransferAsync(int userId, int fromAccountId, int toAccountId, decimal amount);
+        Task<bool> CreateBankAccountAsync(int userId, int customerId, int accountTypeId);
     }
 }
